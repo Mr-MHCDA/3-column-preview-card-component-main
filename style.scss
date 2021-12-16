@@ -1,0 +1,170 @@
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+body {
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: var(--Transparent-white-paragraphs);
+        font-family: 'Big Shoulders Display', cursive;
+        text-transform: uppercase;
+        margin: 40px 0 30px 0;
+    }
+
+    p{
+        color: var(--Transparent-white-paragraphs);
+        font-family: 'Lexend Deca', sans-serif;
+        max-width: 190px;
+        line-height: 1.5;
+    }
+
+    span {
+        background-color: var(--Transparent-white-paragraphs);
+        border-radius: 25px;
+        font-family: 'Lexend Deca', sans-serif;
+        color: var(--Transparent-white-paragraphs);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+    }
+
+
+.boxes{
+    width: 236.250px;
+    margin: 10% 5%;
+
+    .fbox{
+        background-color: var(--Bright-orange);
+        border-radius: 10px 10px 0 0;
+        padding: 10% 15%;
+        min-height: 350px;
+
+        span{
+            color: var(--Bright-orange);
+        }
+
+        span:hover{
+            color: var(--Transparent-white-paragraphs);
+            cursor: pointer;
+            background-color: var(--Bright-orange);
+            border: 2px solid var(--Transparent-white-paragraphs);
+        }
+    }
+
+    .sbox {
+        background-color: var(--Dark-cyan);
+        padding: 10% 15%;
+        min-height: 350px;
+
+        span {
+            color: var(--Dark-cyan);
+        }
+        span:hover{
+            color: var(--Transparent-white-paragraphs);
+            cursor: pointer;
+            background-color: var(--Dark-cyan);
+            border: 2px solid var(--Transparent-white-paragraphs);
+        }
+    }
+
+    .tbox{
+        background-color: var(--Very-dark-cyan);
+        border-radius: 0 0 10px 10px;
+        padding: 10% 15%;
+        min-height: 350px;
+
+        span{
+            color: var(--Very-dark-cyan);
+        }
+        span:hover{
+            color: var(--Transparent-white-paragraphs);
+            cursor: pointer;
+            background-color: var(--Very-dark-cyan);
+            border: 2px solid var(--Transparent-white-paragraphs);
+        }
+    }
+}
+}
+
+@media screen and (min-width: 826px){
+    body{
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    font-size: 15px;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .boxes {
+        display: inline-block;
+        min-height: 350px;
+        min-width: 800px;
+        position: relative;
+        padding-left: 20px;
+
+        .fbox{
+            display: inline-block;
+            position: relative;
+            border-radius: 10px 0 0 10px;
+            max-width: 180px;
+            max-height: 300px;
+            padding: 5% 5%;
+
+            span{
+                position: absolute;
+                bottom: 40px;
+            }
+        }
+
+        .sbox{
+            display: inline-block;
+            position: relative;
+            right: 4px;
+            max-width: 180px;
+            max-height: 90%;
+            padding: 5%;
+
+            span {
+                position: absolute;
+                bottom: 40px;
+            }
+        }
+
+        .tbox {
+            display: inline-block;
+            border-radius: 0 10px 10px 0;
+            position: relative;
+            right: 8px;
+            max-width: 180px;
+            max-height: 90%;
+            padding: 5%;
+            
+            span{
+                position: absolute;
+                bottom: 40px;
+            }
+        }
+
+
+    }
+
+    }
+}
+

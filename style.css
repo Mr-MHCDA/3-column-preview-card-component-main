@@ -1,0 +1,147 @@
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+body {
+  background-color: var(--Very-light-gray-background-headings-buttons);
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body h1 {
+  color: var(--Transparent-white-paragraphs);
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  margin: 40px 0 30px 0;
+}
+body p {
+  color: var(--Transparent-white-paragraphs);
+  font-family: "Lexend Deca", sans-serif;
+  max-width: 190px;
+  line-height: 1.5;
+}
+body span {
+  background-color: var(--Transparent-white-paragraphs);
+  border-radius: 25px;
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--Transparent-white-paragraphs);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+body .boxes {
+  width: 236.25px;
+  margin: 10% 5%;
+}
+body .boxes .fbox {
+  background-color: var(--Bright-orange);
+  border-radius: 10px 10px 0 0;
+  padding: 10% 15%;
+  min-height: 350px;
+}
+body .boxes .fbox span {
+  color: var(--Bright-orange);
+}
+body .boxes .fbox span:hover {
+  color: var(--Transparent-white-paragraphs);
+  cursor: pointer;
+  background-color: var(--Bright-orange);
+  border: 2px solid var(--Transparent-white-paragraphs);
+}
+body .boxes .sbox {
+  background-color: var(--Dark-cyan);
+  padding: 10% 15%;
+  min-height: 350px;
+}
+body .boxes .sbox span {
+  color: var(--Dark-cyan);
+}
+body .boxes .sbox span:hover {
+  color: var(--Transparent-white-paragraphs);
+  cursor: pointer;
+  background-color: var(--Dark-cyan);
+  border: 2px solid var(--Transparent-white-paragraphs);
+}
+body .boxes .tbox {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 0 0 10px 10px;
+  padding: 10% 15%;
+  min-height: 350px;
+}
+body .boxes .tbox span {
+  color: var(--Very-dark-cyan);
+}
+body .boxes .tbox span:hover {
+  color: var(--Transparent-white-paragraphs);
+  cursor: pointer;
+  background-color: var(--Very-dark-cyan);
+  border: 2px solid var(--Transparent-white-paragraphs);
+}
+
+@media screen and (min-width: 826px) {
+  body {
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    font-size: 15px;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .boxes {
+    display: inline-block;
+    min-height: 350px;
+    min-width: 800px;
+    position: relative;
+    padding-left: 20px;
+  }
+  body .boxes .fbox {
+    display: inline-block;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+    max-width: 180px;
+    max-height: 300px;
+    padding: 5% 5%;
+  }
+  body .boxes .fbox span {
+    position: absolute;
+    bottom: 40px;
+  }
+  body .boxes .sbox {
+    display: inline-block;
+    position: relative;
+    right: 4px;
+    max-width: 180px;
+    max-height: 90%;
+    padding: 5%;
+  }
+  body .boxes .sbox span {
+    position: absolute;
+    bottom: 40px;
+  }
+  body .boxes .tbox {
+    display: inline-block;
+    border-radius: 0 10px 10px 0;
+    position: relative;
+    right: 8px;
+    max-width: 180px;
+    max-height: 90%;
+    padding: 5%;
+  }
+  body .boxes .tbox span {
+    position: absolute;
+    bottom: 40px;
+  }
+}/*# sourceMappingURL=style.css.map */
